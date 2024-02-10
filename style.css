@@ -1,0 +1,134 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: #EFEAE3;
+}
+#page1{
+  padding: 0px 2vw;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0%;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+}
+#logo{
+    height: 100%;
+    width: 100%;
+}
+#logo img{
+    width: 171px;
+    position: sticky;
+}
+#menuItem{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    height: 100%;
+}
+#menuItem h4{
+    border: 1px solid #bbbbbbdd;
+    border-radius: 50px;
+    font-weight: 200 ;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    padding: 15px 0px;
+}
+#menuItem h4 a{
+    text-decoration: none;
+    color: rgb(24, 24, 24);
+    position: relative;
+    z-index: 9;
+    padding: 15px 28px;
+}
+
+/* Button Animation */
+
+#menuItem h4::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left: 0%;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.3s;
+}
+#menuItem h4:hover::after{
+    content: "";
+    bottom: 0%;
+    border-radius: 0%;
+}
+
+#menuItem h4:hover a {
+    color: white;
+}
+
+/* BannerContainer */
+
+#BannerContainer{
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    height: 66vh;
+    align-items: flex-end;
+    border-bottom: 1px solid #b4b4b4dd;
+}
+#containerLeft{
+    margin-bottom: 4%;
+}
+#containerLeft h3 {
+   font-size: 30px;
+   /* font-family: Arial, Helvetica, sans-serif; */
+   letter-spacing: -1px;
+   color: black;
+}
+#containerRight{
+    margin-bottom: 4.1%;
+}
+#containerRight h1 {
+    font-size: 10vw;
+    line-height: 145px;
+    font-family: sans-serif;
+    font-weight: 900;
+    letter-spacing: -8px;
+    text-align: right;
+}
+#video_container{
+    max-width: 100vw;
+    overflow: hidden;
+    border-radius: 50px;
+    margin: 90px 0px;
+}
+#animate_text{
+    width: auto;
+    display: flex;
+    gap: 20px;
+}
+#animate_text .text{
+     font-weight: 900;
+     font-size: 130px;
+     text-transform: uppercase;
+     letter-spacing: -6px;
+}
+#animate .icon{
+    height: 20px;
+    width: 20px;
+    background-color: #FE330A;
+}
